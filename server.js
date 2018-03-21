@@ -14,9 +14,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Angular pref DIST output folder
 app.use(express.static(path.join(_dirname, 'dist')));
 
-// API Location
-app.use('/api', api);
-
 // Send all other requests to the ng app
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'dist/index.html'));
