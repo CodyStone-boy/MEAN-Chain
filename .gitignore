@@ -9,6 +9,9 @@
 # dependencies
 /node_modules
 
+#server
+/server
+
 # IDEs and editors
 /.idea
 .project
